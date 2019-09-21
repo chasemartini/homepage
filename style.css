@@ -1,0 +1,137 @@
+.intro {
+    text-align: center;
+    font-weight: bold,
+}
+.title {
+    font-weight: bold;
+    font-size: 68px;
+    text-align: center;
+    text-shadow: 4px 4px 4px black;
+    color: white;
+}
+.title-1 {
+    font-weight: bold;
+    font-size: 32px;
+    text-shadow: 4px 4px 4px black;
+    color: white;
+}
+.navigation {
+    animation-name: nav-highlight;
+    animation-duration: 5s;
+    @keyframes nav-highlight {
+        0% {
+            background-color: green;
+        }
+        50% {
+            background-color: yellow;
+        }
+        100% {
+            background-color: red;
+        }
+    }
+}
+.navigation a {
+    color: white;
+    text-align: right;
+}
+header {
+    background-color: green;
+    font-weight: bold;
+    text-align: center;
+}
+.cover-shot {
+    border-radius: 50%;
+    border: solid 10px black;
+}
+p {
+    text-shadow: 2px 2px 2px black;
+    color: white;
+}
+.goal {
+}
+.status{
+}
+.container {
+    text-align: center;
+    border: solid black 5px;
+    background-color: rgb(209, 208, 208);
+    opacity: 0.85;
+    margin: 20px;
+    padding: 8px 16px;
+}
+.container:last-child {
+    margin-bottom: 100px;
+}
+body {
+    background-image: url(background-1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% center;
+    background-attachment: fixed;
+    background-size: cover;
+    /*background: linear-gradient(90deg, green, yellow, red);*/
+    font-family: 'Trebuchet MS', 
+                 'Lucida Sans Unicode', 
+                 'Lucida Grande', 
+                 'Lucida Sans', 
+                  Arial, 
+                  sans-serif;
+}
+h2 {
+    text-align: center;
+}
+p {
+    font-size: 18px;
+}
+footer {
+    text-align: center;
+    background-color: red;
+    font-weight: bold;
+}
+.navigation {
+    width: 100%;
+}
+.link:hover {
+    color: red;
+}
+.videos {
+    text-align: center;
+}
+.music p {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: left;
+}
+#dogyearsbutton {
+    height:34px;
+    margin:0 auto;
+    margin-right:10px;
+    float:left;
+    transition: 0.5s ease-out;
+}
+#dogyearsbutton:hover {
+    background-color: rgb(69, 69, 240);
+    transform:scale(1.5);
+}
+#eightball-question {
+    width: 250px;
+}
+#eightball-answer {
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 32px;
+    font-style: italic;
+}
+.secret-content {
+    text-align: center;
+}
+.diego-pic {
+    border: solid black 10px;
+    border-radius: 50%;
+}
+.diego-description {
+    text-align: center;
+}

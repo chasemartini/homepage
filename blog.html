@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <script src="snake.js"></script>
+  <script src="dog-years-function.js"></script>
+  <script src="magic-8ball.js"></script>
+  <title>Chase Martini</title>
+  </head>
+  <body>
+    <header>
+        <table class="navigation">
+            <tr>
+                <td><a href="/">Home</a></td>
+                <td><a href="/about.html">About</a></td>
+                <td><a href="/blog.html">Blog</a></td>
+                <td><a href="/videos.html">Videos</a></td>
+                <td><a href="/music.html">Music</a></td>
+            </tr>
+        </table>
+    </header>
+  <main class="blog">
+    <h1 class="title"><u>Blog</u></h1>
+    <br>
+    <article id="blog-secret">
+      <br>
+      <h2 class="title-1"><u>August, 15th 2019</u></h2>
+        <h3>Secret Content Section!</h3>
+            <p>Click <a href="password.html">here</a> to access the secret content!</p>
+    </article>
+    <article id="eightball">
+      <br>
+      <h2 class="title-1"><u>March, 17th 2019</u></h2>
+        <h3>Magic 8-Ball Drinking Game!!</h3>
+        <button onclick="magic8ball()">Ask a Question!</button>
+        <input 
+          class="text-field" 
+          id="eightball-question" 
+          type="text" 
+          placeholder="What answer does your heart desire?"
+          />
+      <div id="eightball-answer">
+
+      </div>
+    </article>
+    <article id="snake-game">
+    <br>
+    <h2 class="title-1"><u>March, 16th 2019</u></h2>
+      <h3>Play the Classic Snake Game!!</h3>
+    
+    <div id="classicSnake" onload="snake()"></div>
+    </article>
+    <article>
+      <h2 class="title-1"><u>March, 14th 2019</u></h2>
+        <p>So, this is my first <strong>blog post</strong>, hopefully one of many...
+        At this point, I have logged just over <strong>60 hours</strong> of
+        coding, learning <strong>HTML, CSS,</strong> and a little bit of
+        <strong>Javascript</strong>. I am using <a href="https://www.codecademy.com" target="_blank">
+        Codecademy</a> to learn the inintial ideas, and then I am
+        using <a href="https://www.freecodecamp.com" target="_blank">FreeCodeCamp</a>
+        to go back over what I have learned, taking lots of notes,
+        and then when I feel comfortable, applying them to my
+        webpage here. I have been finding so far that although
+        these sources are quite similar, they cover slightly
+        different aspects, and are very complementary when used
+        together. Other sources I have found useful have been the 
+        numerous <strong>tutorials</strong> you can find through <a href="https://www.youtube.com" target="_blank">
+        YouTube</a></p>
+    <br>
+      <p>
+        The first thing I would like to point you to, so that you 
+        can see some programming in action, is the dog years 
+        calculator I created at the bottom of this post. Just 
+        underneath this entry, you will find a button, that when you 
+        click it, my page will ask you for your age. When you enter 
+        your age, it will determine how old you are in dog years. 
+        At our home, we have  3 cats and 1 dog, so it's quite
+        interesting to realize the value of their life by figuring 
+        out how old you would be if you were in their shoes!
+    <br>
+    <br>
+        So, the way I created the function that calculates your age 
+        in dog years, is basically challenging the current
+        misconception that every dog year equals 7 years in human
+        years. The actual life span and aging of a dog dictates that
+        the first 2 years of a dog's life is equal to 10.5 years 
+        each. This means that by the time your dog is 2 years old, 
+        they are 21 years old in respective terms. However, after 
+        these first 2 years, aging slows to 4 years per human year. 
+        Therefore the calculation is a little more complicated. So, 
+        I have made it easy for you to see just how many years you 
+        would have lived through if you were a dog.
+    <br>
+        Cool, right? :-)
+      </p>
+    <br>
+    <div id="dogyears">
+      <h3>What is your age in dog years?</h3>
+        <button id="dogyearsbutton" onclick="calculateDogYears()">Click to Calculate!</button>
+    </div>
+  </article>
+  </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <footer>Started coding on 08.02.2019</footer>
+  </body>
+</html>
