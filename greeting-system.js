@@ -28,16 +28,13 @@ function nameCase(myName) {
       return "Yogi!!!!! My bestie and brother from another mother! Thanks for popping by!! Big up!!";
 
     case "ashley":
-      return "My brother Ashley!! I miss smokin' spliffs with you by the field!! Till next time homie!!";
-
-    case "kelly":
-      return "Kel Bell!!! Long time!! Hope the kids are well and that life is bless! Follow the vibes!!";
+      return "My brother Ashley!! I miss chilling with you by the field!! Till next time homie!!";
 
     case "milen":
       return "Yes Empress!!! Thanks for stopping by!! Remember watching the Original Kings of Comedy??!!";
     
     case "miikka":
-      return "Yesss my gypsy bro thanks for stopping by!! Big love to you and the fam!!!!";
+      return "Yesss my bro thanks for stopping by!! Big love to you and the fam!!!!";
 
     case "silviya":
       return "Much love out to you my soul sister!! Thanks so much for being there for me always!!";4
@@ -46,10 +43,7 @@ function nameCase(myName) {
       return "My brother from another mother!! I hope you are well and can't wait to see you again!! Missing the old days!!!";
 
     case "joni":
-      return "Much love out to you my soul sister!! Thanks so much for being there for me always!!";
-
-    case "chrissy":
-      return "Yogi!!! I miss you so much!! Please let's keep more in touch!!! Stay blessed bredren!!S";
+      return "Much love out to you brother! Thanks for checking out the site!";
 
     case "Telle":
       return "My soul Mother!! Thank you so much for stopping by! Big love and blessings!!";

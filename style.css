@@ -14,9 +14,30 @@
     font-size: 32px;
     text-shadow: 4px 4px 4px black;
     color: white;
+    text-align: left;
+    margin: 20px;
+    padding: 8px 16px;
 }
-.navigation {
-    animation-name: nav-highlight;
+.title-2 {
+    font-weight: bold;
+    font-size: 32px;
+    text-shadow: 4px 4px 4px black;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    padding: 8px 16px;
+}
+.container-1 {
+    text-align: center;
+}
+#center-text {
+    text-align: center;
+}
+.center-image {
+    text-align: center;
+}
+/*.navigation {
+animation-name: nav-highlight;
     animation-duration: 5s;
     @keyframes nav-highlight {
         0% {
@@ -30,12 +51,12 @@
         }
     }
 }
+*/
 .navigation a {
     color: white;
     text-align: right;
 }
 header {
-    background-color: green;
     font-weight: bold;
     text-align: center;
 }
@@ -52,81 +73,150 @@ p {
 .status{
 }
 .container {
-    text-align: center;
-    border: solid black 5px;
-    background-color: rgb(209, 208, 208);
+    text-align: left;
+    background-color: rgb(31, 30, 30);
     opacity: 0.85;
     margin: 20px;
     padding: 8px 16px;
+}
+.links {
+    text-shadow: 1px 1px 1px white;
 }
 .container:last-child {
     margin-bottom: 100px;
 }
 body {
-    background-image: url(background-1.jpg);
+    background-image: url("background-1.jpg");
     background-repeat: no-repeat;
     background-position: 50% center;
     background-attachment: fixed;
     background-size: cover;
     /*background: linear-gradient(90deg, green, yellow, red);*/
-    font-family: 'Trebuchet MS', 
+    /*font-family: 'Trebuchet MS', 
                  'Lucida Sans Unicode', 
                  'Lucida Grande', 
                  'Lucida Sans', 
                   Arial, 
-                  sans-serif;
+                  sans-serif;*/
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 h2 {
     text-align: center;
 }
 p {
     font-size: 18px;
+    background-color: rgb(31, 30, 30);
+    opacity: 0.85;
+    margin: 20px;
+    padding: 8px 16px;
 }
 footer {
     text-align: center;
     background-color: red;
     font-weight: bold;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    margin: 20px;
+    padding: 8px 16px;
+    margin-top: 100px;
 }
 .navigation {
     width: 100%;
+    background-color: rgb(31, 30, 30); opacity: 0.85;
+    position: relative;
 }
 .link:hover {
     color: red;
 }
 .videos {
     text-align: center;
+    margin-bottom: 100px;
 }
 .music p {
     text-align: center;
+}
+.music {
+    margin-bottom: 100px;
 }
 h2 {
     text-align: center;
 }
 h3 {
     text-align: left;
+    background-color: rgb(31, 30, 30);
+    opacity: 0.85;
+    margin: 20px;
+    padding: 8px 16px;
+    color: white;
+}
+h4 {
+    text-align: left;
+    background-color: rgb(31, 30, 30);
+    opacity: 0.85;
+    margin: 20px;
+    padding: 8px 16px;
+    color: white;
 }
 #dogyearsbutton {
+    margin-left: 20px;
     height:34px;
     margin:0 auto;
     margin-right:10px;
     float:left;
     transition: 0.5s ease-out;
+    padding: 8px 16px;
 }
 #dogyearsbutton:hover {
     background-color: rgb(69, 69, 240);
-    transform:scale(1.5);
+    transform:scale(1.35);
+}
+.eightball-reply {
+    margin-left: 100px;
+    transform:scale(1.01);
+    transition: 0.5s ease-out;
+    padding: 8px 16px;
+    color: red;
+}
+#eightball-button {
+    margin-left: 35px;
+    height:34px;
+    margin-right:10px;
+    float:left;
+    transition: 0.5s ease-out;
+    padding: 8px 16px;
+}
+#eightball-button:hover {
+    background-color: rgb(69, 69, 240);
+    transform:scale(1.35);
+    margin-left: 30px;
 }
 #eightball-question {
     width: 250px;
+    padding: 8px 16px;
+    margin-left: 20px;
+    margin-bottom: 40px;
 }
 #eightball-answer {
+    color: red;
     margin-top: 1em;
     font-weight: bold;
     font-size: 32px;
     font-style: italic;
+    text-shadow: 2px 2px 2px white;
+    text-align: left;
+    margin: 20px;
+    padding: 8px 16px;
+}
+#blog-secret {
+    
+}
+#center-pics {
+    text-align: center;
+    opacity: 1.0;
 }
 .secret-content {
     text-align: center;
+    margin-bottom: 100px;
 }
 .diego-pic {
     border: solid black 10px;
@@ -135,3 +225,39 @@ h3 {
 .diego-description {
     text-align: center;
 }
+#clickhere {
+    margin: 20px;
+}
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 25%; 
+    height: 0;
+    margin-bottom: 15%;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+  }
+  .interests {
+    text-align: center;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 2px 2px 2px black;
+  }
+  .interests > ul {
+      color: white;
+      display: inline-block;
+  }
+  #bullet-points {
+      text-align: left;
+  }
+  #link-left {
+      text-align: left;
+  }
+  #left-music-top {
+      text-align: left;
+  }

@@ -1,117 +1,317 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" type="text/css" rel="stylesheet">
-  <script src="snake.js"></script>
-  <script src="dog-years-function.js"></script>
-  <script src="magic-8ball.js"></script>
-  <title>Chase Martini</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="snake.js"></script>
+    <script src="dog-years-function.js"></script>
+    <script src="magic-8ball.js"></script>
+    <title>Chase Martini</title>
   </head>
   <body>
-    <header>
-        <table class="navigation">
-            <tr>
-                <td><a href="/">Home</a></td>
-                <td><a href="/about.html">About</a></td>
-                <td><a href="/blog.html">Blog</a></td>
-                <td><a href="/videos.html">Videos</a></td>
-                <td><a href="/music.html">Music</a></td>
-            </tr>
-        </table>
+    <header id="top">
+      <table class="navigation">
+        <tr>
+          <td><a href="/">Home</a></td>
+          <td><a href="/about.html">About</a></td>
+          <td><a href="/blog.html">Blog</a></td>
+          <td><a href="/videos.html">Videos</a></td>
+          <td><a href="/music.html">Music</a></td>
+        </tr>
+      </table>
     </header>
-  <main class="blog">
-    <h1 class="title"><u>Blog</u></h1>
-    <br>
-    <article id="blog-secret">
-      <br>
-      <h2 class="title-1"><u>August, 15th 2019</u></h2>
-        <h3>Secret Content Section!</h3>
-            <p>Click <a href="password.html">here</a> to access the secret content!</p>
-    </article>
-    <article id="eightball">
-      <br>
-      <h2 class="title-1"><u>March, 17th 2019</u></h2>
-        <h3>Magic 8-Ball Drinking Game!!</h3>
-        <button onclick="magic8ball()">Ask a Question!</button>
-        <input 
-          class="text-field" 
-          id="eightball-question" 
-          type="text" 
-          placeholder="What answer does your heart desire?"
-          />
-      <div id="eightball-answer">
-
-      </div>
-    </article>
-    <article id="snake-game">
-    <br>
-    <h2 class="title-1"><u>March, 16th 2019</u></h2>
-      <h3>Play the Classic Snake Game!!</h3>
-    
-    <div id="classicSnake" onload="snake()"></div>
-    </article>
-    <article>
-      <h2 class="title-1"><u>March, 14th 2019</u></h2>
-        <p>So, this is my first <strong>blog post</strong>, hopefully one of many...
-        At this point, I have logged just over <strong>60 hours</strong> of
-        coding, learning <strong>HTML, CSS,</strong> and a little bit of
-        <strong>Javascript</strong>. I am using <a href="https://www.codecademy.com" target="_blank">
-        Codecademy</a> to learn the inintial ideas, and then I am
-        using <a href="https://www.freecodecamp.com" target="_blank">FreeCodeCamp</a>
-        to go back over what I have learned, taking lots of notes,
-        and then when I feel comfortable, applying them to my
-        webpage here. I have been finding so far that although
-        these sources are quite similar, they cover slightly
-        different aspects, and are very complementary when used
-        together. Other sources I have found useful have been the 
-        numerous <strong>tutorials</strong> you can find through <a href="https://www.youtube.com" target="_blank">
-        YouTube</a></p>
-    <br>
-      <p>
-        The first thing I would like to point you to, so that you 
-        can see some programming in action, is the dog years 
-        calculator I created at the bottom of this post. Just 
-        underneath this entry, you will find a button, that when you 
-        click it, my page will ask you for your age. When you enter 
-        your age, it will determine how old you are in dog years. 
-        At our home, we have  3 cats and 1 dog, so it's quite
-        interesting to realize the value of their life by figuring 
-        out how old you would be if you were in their shoes!
-    <br>
-    <br>
-        So, the way I created the function that calculates your age 
-        in dog years, is basically challenging the current
-        misconception that every dog year equals 7 years in human
-        years. The actual life span and aging of a dog dictates that
-        the first 2 years of a dog's life is equal to 10.5 years 
-        each. This means that by the time your dog is 2 years old, 
-        they are 21 years old in respective terms. However, after 
-        these first 2 years, aging slows to 4 years per human year. 
-        Therefore the calculation is a little more complicated. So, 
-        I have made it easy for you to see just how many years you 
-        would have lived through if you were a dog.
-    <br>
-        Cool, right? :-)
-      </p>
-    <br>
-    <div id="dogyears">
-      <h3>What is your age in dog years?</h3>
-        <button id="dogyearsbutton" onclick="calculateDogYears()">Click to Calculate!</button>
-    </div>
-  </article>
-  </main>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  <footer>Started coding on 08.02.2019</footer>
+    <main class="blog">
+      <h1 class="title">Blog</h1>
+        <section class="container">
+          <h2 class="title-1">Jump to examples of JavaScript:</h2>
+            <p><a class="links" href="#secret">Secret Content Area</a></p>
+            <p><a class="links" href="#march">Magic 8-ball Fortune Teller</a></p>
+            <p><a class="links" href="#dogyearsage">Your Age in Dog Years Calculator</a></p>
+        </section>
+        <section class="container">
+          <h2 class="title-1">Browse by month:</h2>
+            <p><a class="links" href="#september">September</a></p>
+            <p><a class="links" href="#august">August</a></p>
+            <p><a class="links" href="#july">July</a></p>
+            <p><a class="links" href="#june">June</a></p>
+            <p><a class="links" href="#may">May</a></p>
+            <p><a class="links" href="#april">April</a></p>
+            <p><a class="links" href="#march">March</a></p>
+        </section>
+        <article class="container">
+          <h2 class="title-1" id="september">Ted Talks on Code and Programming</h2>
+            <h3>September 9th, 2019</h3>
+              <p>
+                Below are some short motivational videos from <a href="https://www.ted.com/talks" class="links">Ted Talks</a>:
+              </p>
+                <h4>Learning to Code is Not Just for Coders</h4>
+                  <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MvTSPwftvyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                <h4>The Poetry of Programming</h4>
+                  <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-jRREn6ifEQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                <h4>The Art of Code</h4>
+                  <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GqgTwkTP6PM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                <h4>Don't Just Learn To Code, Learn To Create</h4>
+                  <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6rxWc-TNIJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                <h4>How I Taught Myself to Code</h4>
+                  <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nmZR_JsLCfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                <h4>The Right Way to Learn Code</h4>
+                  <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PdTEXWtd3HY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+            <p><a class="links" href="#top">Back to top</a></p>
+        </article>
+        <article class="container">
+          <h2 class="title-1" id="august">A Couple Useful Apps</h2>
+            <h3>August 22nd, 2019</h3>
+              <p>
+              I really love discovering new apps and games on my mobile, so here are a couple I use that are worth mentioning:
+              </p>
+                <h4>10000+ (Hours Tracker)</h4>
+                  <p>
+                    This app is what I use to log my hours and keep track of my progress. It's fairly basic, but it's actually very much in line with the goal of this site to see how close I am to achieving my 10,000 hour "master" goal. It tells you what days you have logged hours, the trend of how long you are averaging daily, and also estimates how long it will take you to reach 10,000 hours if you keep on your current pace. When I first started and was putting in a lot of hours every day, it estimated that it would take me about 10 years to acheive my target, but due to slowing down, it now estimates that it will take me 20 years. However,once I start studying full-time and eventually get a dev job, this estimate will decrease greatly.
+                  </br></br>
+                    Download the app below:
+                  </br></br>
+                    <a href="https://play.google.com/store/apps/details?id=com.yichuanju.tenkplus&hl=en" class="links">Android</a>.
+                  </br></br>
+                    Alternative app for iPhones:
+                  </br></br>
+                    <a href="https://play.google.com/store/apps/details?id=se.avia.avia10000hours&hl=en_US" class="links">iOS</a>.
+                  </p>
+                <h4>Mimo</h4>
+                  <p>
+                    If you are always on the go and don't have much time to sit down at a computer to learn to code, check out this app that lets you practice on your mobile. They offer pathways to making a website, creating iOS/Android apps, programming for games, and even hacking. Plus they offer courses on pretty much all the languages you would want to learn as a developer. It's free to download, however to access the full content you have to pay about $60/year, but considering that works out to $5/month, it's really a small investment to make.
+                  </br></br>
+                    Visit their website <a href="https://getmimo.com/" class="links">here</a>.
+                  </p>
+            <p><a class="links" href="#top">Back to top</a></p>
+        </article>
+        <article class="container" id="blog-secret">
+          <h2 class="title-1" id="secret">Secret Content Section</h2>
+            <h3>August, 15th 2019</h3>
+              <p>Click <a class="links" href="password.html">here</a> to access the secret content!</p>
+              <p>
+                What I've done here is created a password protected area of the site using JavaScript I learned from the "Get Coding" book I have been reading, which i highly recommend to other beginners. Similar to the greeting system on my home page, it taught me to use an alert function when you click on the link, followed by a page with an input element that is then run through JavaScript, so that if the user enters the right password, they will be taken to a page that is not accessible through anywhere else on the site. 
+              </p>
+              <div id="center-pics">
+                <img src="get-coding.jpg" alt="Get Coding" width="300" height="350">
+              </div>
+            <p><a class="links" href="#top">Back to top</a></p>
+        </article>
+        <article class="container">
+          <h2 class="title-1">100 Hours Update</h2>
+            <h3>August 1st, 2019</h3>
+              <p>
+                So far I have logged 100 hours of learning to code! By using many types of ways to learn, I feel as though I have made much more progress than what I had imagined possible at this point. When I first sat down and opened up a text editor, I didn't actually think I would have a working website that looks half decent by now. There are still a lot of changes I want to make to this website, but I find that part of the fun also. It seems like even though you can progress quickly, there is always more to learn and things to add that I am thinking of.
+              </br></br>
+                At this point, I am fairly happy with my understanding of HTML and CSS, and reasonably happy with what I have learned of JavaScript, although that is the language I still find the most intimidating. Once I make the last style updates to this site for what will essentially be version 2, I plan to focus much more on JavaScript so that I can start adding more interactivity and fun features to the site.
+              </br></br>
+                I am a little unhappy with my pace, averaging about 20 hours/month. But a large part of that has been taking breaks and really trying to process what I have learned. Plus there is a lot of time that I haven't included in the official hours I have logged, where I have been watching videos or reading about coding. So even though the practical application of things I have learned hasn't been so extensive the past 6 months, I am always thinking about the things I want to do and learn. But little-by-little, I plan to start progressing faster, and am hoping to start studying Web Development full-time by attending a course or bootcamp, so that afterwards I can start applying to jobs and internship positions.
+              </br></br>
+                So please keep checking back for more updates and thank you for visiting my site!
+              </p>
+            <p><a class="links" href="#top">Back to top</a></p>
+        </article>
+        <article class="container">
+          <h2 class="title-1" id="july">Inspiration</h2>
+            <h3>July 10th, 2019</h3>
+              <p>
+                I subscribed to the FreeCodeCamp mailing list, and in most of the emails I receive, among the other resources of links, podcasts, and articles, they include some really inspiring stories from people in similar situations as myself who are trying to change career or discover coding while facing adversity and manage to become professional developers. Below are some of the stories I have read recently that have given me more motivation to keep going:
+              </p>
+                <h4>What a Long Strange Trip it's Been</h4>
+                  <p>
+                    This person was on a road to self-destruction, then found boredom and frustration in learning Java and C, before discovering a passion for Web Development and landing his first professional dev job.
+                  </br></br>
+                    Read his story <a href="https://www.freecodecamp.org/forum/t/what-a-long-strange-trip-its-been/277031" class="links">here</a>.
+                  </p>
+                <h4>I got a job! At last!</h4>
+                  <p>
+                    This developer struggled to balance a full-time job and learn coding at the same time, much like myself. He helps you understand and feel OK about taking your time to learn. Similar to my own situation, I have weeks where I code and study a lot, and other weeks where I just need a break and have too much work and home life things to take care of to really put in the time. This made me feel a lot better about my own pace and way that I am approaching this new skill set.
+                  </br></br>
+                    Read his story <a href="https://www.freecodecamp.org/forum/t/i-got-a-job-at-last/276222" class="links">here</a>.
+                  </p>
+                <h4>Got a Promotion to Mid-Level Software Engineer!</h4>
+                  <p>
+                    This Mid-level Software Developer got a promotion after only a bit more than a year of professional experience. He shows you how fast this can happen and offers some insight into the type of things you need to know and be doing to be prepared for interviews and promotions.
+                  </br></br>
+                    Read their story <a href="https://www.freecodecamp.org/forum/t/got-a-promotion-to-mid-level-software-engineer/274233" class="links">here</a>.
+                  </p>
+                <h4>How to Kill Your Procrastination and Absolutely Crush It With Your Ideas</h4>
+                  <p>
+                    This article is less of a story, but more of an overview of how to stay motivated and keep working on your ideas. This definitelt applies to me, because I often have the problem of not finishing projects that I start. If you suffer from this problem, this article is definitely worth a read!
+                  </br></br>
+                    Read the article <a href="https://www.freecodecamp.org/news/how-to-kill-procrastination-and-crush-your-ideas/" class="links">here</a>.
+                  </p>
+            <p><a class="links" href="#top">Back to top</a></p>
+        </article>
+        <article class="container">
+          <h2 class="title-1" id="june">Useful Links</h2>
+            <h3>June 21st, 2019</h3>
+              <p>Below is a list of links that I have been using:</p>
+                <h4>650 Free Online Programming & Computer Science Courses</h4>
+                  <p>
+                    This massive collection of courses is sorted into beginner, intermediate, and advanced levels of skill and I have found many essential resources here. Even though much of it I have already worked with and studied, I find it super effective to keep reading and going over the same principles of beginner subjects from different places because they all make their points in their own way, which really helps to retain the information better.
+                  </br></br>
+                    View the list <a href="https://www.freecodecamp.org/news/650-free-online-programming-computer-science-courses-you-can-start-this-summer-6c8905e6a3b2/" class="links">here</a>.
+                  </p>
+                <h4>71 of the Best Places to Learn to Code for Free</h4>
+                  <p>
+                    Instead of specific courses, like the previous list, this list provides other online schools, blogs and websites, YouTube Channels, etc. If you have been taking an online course and it starts to get too hard, switch to another online course, open up YouTube and watch videos on the material you just learned, then try reading articles or someones blog. By doing this, you reinforce what you have learned and begin to feel confident in that area, which makes moving forward feel much less intimidating.
+                  </br></br>
+                    View the list <a href="https://learntocodewith.me/posts/code-for-free/" class="links">here</a>.
+                  </p>
+                <h4>HTML Element Reference</h4>
+                  <p>
+                    Here is a complete list of HTML tags and what using each element does. The online courses tend to only cover the most basic ones at the start, so it's important to check this list to see all the other ones you can use to make your code easier to work with.
+                  </br></br>
+                    View the list <a href="https://www.w3schools.com/tags/ref_byfunc.asp" class="links">here</a>.
+                  </p>
+                <h4>CSS Properties</h4>
+                  <p>
+                    Here is a complete list of CSS properties to that you can use to change the style of your website. Similar to HTML tags, the online courses only teach the most common and basic ones at the start, so check out this list and see what other options you have for making your site look for professional.
+                  </br></br>
+                    View the list <a href="https://www.w3schools.com/cssref/" class="links">here</a>.
+                  </p>
+            <p><a class="links" href="#top">Back to top</a></p>
+        </article>
+        <article class="container">
+          <h2 class="title-1">Helpful Articles</h2>
+            <h3>June 14th, 2019</h3>
+              <p>Below are some articles I have read that are great for beginners:</p>
+                <h4>Soft Skills Every Developer Should Have</h4>
+                  <p>
+                    This article talks about the general qualities you should have and work on as a developer. Instead of focusing on the technical skills you need to learn, it covers things like curiosity, patience, and communication.
+                  </br></br>
+                    Read the article <a href="https://www.freecodecamp.org/news/soft-skills-every-developer-should-have/" class="links">here</a>.
+                  </p>
+                <h4>The Best Ways to Teach Yourself to Code</h4>
+                  <p>
+                    Reading this article will give you helpful tips on all the sorts of ways you can learn to code. It includes information on the benefits and differences of learning through online courses, books, personal projects, bootcamps, and more.
+                  </br></br>
+                    Read the article <a href="https://lifehacker.com/top-10-ways-to-teach-yourself-to-code-1684250889" class="links">here</a>.
+                  </p>
+                <h4>Learn to Code in 2019, Get Hired, and Have Fun Along the Way</h4>
+                  <p>
+                    Here, the author covers the modern demand for Web Development and provides insight into switching careers and the step-by-step direction you should take starting out. There are so many helpful links throughout the whole article, I highly recomment it!
+                  </br></br>
+                    Read the article <a href="https://medium.com/zerotomastery/learn-to-code-in-2019-get-hired-and-have-fun-along-the-way-d4197f96be27" class="links">here</a>.
+                  </p>
+            <p><a class="links" href="#top">Back to top</a></p>
+        </article>
+        <article class="container">
+          <h2 class="title-1" id="may">Beginning Programming for Dummies</h2>
+            <h3>May, 29th 2019</h3>
+              <p>
+                I ordered this book, <a href="https://www.amazon.com/Beginning-Programming-All-Reference-Dummies/dp/0470108541" class="links">Beginning Programming for Dummies</a>, and have started reading the first section, "Getting Started." There is quite a lot of information on the history of programming and general points on how computers and programming work. 
+              </br></br>
+                One of the most interesting things I have learned so far is that the first designs for a programmable machine came from Charles Babbage all the way back in 1834. He proposed a mechanical, steam-powered machine called the Analytical Engine. By feeding punch cards into the machine, it could solve different problems. Then, a woman named Ada Lovelace wrote a program for this machine to calculate and print the Bernoulli numbers, essentially becomming the world's first computer programmer.
+              </br></br>
+                More than 100 years later in 1943, the US Army funded the creation of the first true computer to calculate artillery trajectories, called ENIAC (Electronic Numerical Integrator and Computer). This one required the physical actions of flipping switches and rearranging cables to program it.
+              </p>
+              <div id="center-pics">
+                <img src="Content/Images/beginning-programming.jpg" alt="Beginning Programming Book Cover" width="300" height="350">
+              </div>
+            <p><a class="links" href="#top">Back to top</a></p>
+        </article>
+        <article class="container">
+          <h2 class="title-1">Code Magazine</h2>
+            <h3>May, 14th 2019</h3>
+              <p>
+                I received my first copy of <a href="https://www.codemag.com/Magazine" class="links">Code Magazine!</a> Most of it seems pretty out of my league at the moment, but I found the article on AI quite interesting. Plus it's useful to go over just to learn the names and basic concepts of different technologies and principles, even if there's no way I can manage to use them myself yet. Anyways, I definitely plan to keep my subscription, so that as I advance, I am able to go back to the articles to see how much more I can understand and track my progress.
+              </p>
+              <div id="center-pics">
+                <img src="Content/Images/codemag.jpg" alt="Code Magazine Cover" width="300" height="350">
+              </div>
+            <p><a class="links" href="#top">Back to top</a></p>
+        </article>
+        <article class="container">
+          <h2 class="title-1" id="april">Tutorials</h2>
+            <h3>April 20, 2019</h3>
+              <p>
+                Below are some tutorials from <a href="https://www.traversymedia.com" class="links">Traversy Media</a> I have watched that have been highly informative:
+              </p>
+                <h4>HTML for Beginners</h4>
+                  <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                <h4>CSS for Beginners</h4>
+                  <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yfoY53QXEnI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                <h4>JavaScript for Beginners</h4>
+                  <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hdI2bqOjy3c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+            <p><a class="links" href="#top">Back to top</a></p>
+        </article>
+        <article class="container">
+          <h2 class="title-1">Lessons</h2>
+            <h3>April 2, 2019</h3>
+              <p>
+                So last month I started proper lessons with my mentor, Claus Nurro, the creator of Neverthink. He is a huge inspiration for my reasons to start coding and I have found his knowledge and help to be extremely useful. One thing I have noticed is that the courses I have been taking throw huge amounts of useful material at you, but don't make it easy for beginners to really start their own site. So far he has helped me conceptualize the things I have been learning through online courses to set up my own domain name and create practical changes and updates to my site.
+              </br></br>
+                Some of the really handy things we have gone over are file and domain management, best practices for writing easy-to-understand code, when to use certain tags, and the most common helpful style changes to make. Plus he has helped me implement the Javascript I have been learning into the site.
+              </br></br>
+                If you haven't heard of it yet or haven't taken the time to check out the site or download the app, visit Neverthink to watch hand-picked YouTube videos curated into channels for your ease and entertainment! Click the picture below to visit their website, and if you are on mobile, check out your app store to grab the free download!
+              </p>
+              <div id="center-pics">
+                <a href="https://neverthink.tv"><img src="Content/Images/neverthink.png" alt="Neverthink Logo" width="300" height="250"></a>
+              </div>  
+            <p><a class="links" href="#top">Back to top</a></p>
+        </article>
+        <article class="container" id="eightball">
+          <h2 class="title-1" id="march">Magic 8-Ball Fortune Teller</h2>
+            <h3>March 18th, 2019</h3>
+              <button id="eightball-button" onclick="magic8ball()">Ask a Question!</button>
+              <input 
+                class="text-field" 
+                id="eightball-question" 
+                type="text" 
+                placeholder="What does your heart desire to know?"
+              />
+              <div id="eightball-answer"></div>
+              <p>
+                With this example of my coding skills, I took a course on JavaScript through the Codecademy website. The course gave me a further insight into functions and variables, as well as conditionals, cases and the difference between "var," "let," and "const." So by creating a random number generator function between 0-7 that applies to 8 replies from the "magic 8-ball," I was able to have an answer appear in red text underneath when you ask a question!
+              </br></br>
+                It also uses button and form elements within the HTML document, where I played around with the "hover" attribute in CSS to make the button become larger and change color when you hover over it. I also applied this new knowledge to the dog years calculator in my previous post.</p>
+            <p><a class="links" href="#top">Back to top</a></p>
+        </article>
+        <article class="container" id="snake-game">
+          <h2 class="title-1">Play the Classic Snake Game</h2>
+            <h3>March 16th, 2019</h3>
+              <p>This is a work in progress.. check back later :-)</p>
+              <div id="classicSnake" onload="snake()"></div>
+            <p><a class="links" href="#top">Back to top</a></p>
+        </article>
+        <article class="container">
+          <h2 class="title-1" id="dogyearsage">What is Your Age in Dog Years?</h2>
+            <h3>March 14th, 2019</h3>
+              <p>
+                So, this is my first blog post! One of many to come! At this point, I have logged just over <b>60 hours</b> of coding, learning <strong>HTML5</strong>, <strong>CSS3</strong>, and a little bit of <strong>JavaScript</strong>. I am using <a class="links" href="https://www.codecademy.com" target="_blank">Codecademy</a> to learn the initial ideas, and then I am using <a class="links" href="https://www.freecodecamp.com" target="_blank">FreeCodeCamp</a> to go back over what I have learned, taking lots of notes,and then when I feel comfortable, applying them to my webpage here. I have been finding so far that although these sources are quite similar, they cover slightly different aspects and are very complementary when used together. Other sources I have found useful have been the numerous tutorials you can find through YouTube.
+              </br></br>
+                The first thing I would like to point you to, so that you can see some programming in action, is the dog years calculator I created at the bottom of this post. Just underneath this entry, you will find a button, that when you click it, my page will ask you for your age. When you enter your age, it will determine how old you are in dog years. At our home, we have  3 cats and 1 dog, so it's quite interesting to realize the value of their life by figuring out how old you would be if you were in their shoes!
+              </br></br>
+                So, the way I created the function that calculates your age in dog years, is basically challenging the current misconception that every dog year equals 7 years in human years. The actual life span and aging of a dog dictates that the first 2 years of a dog's life is equal to 10.5 years each. This means that by the time your dog is 2 years old, they are 21 years old in respective terms. However, after these first 2 years, aging slows to 4 years per human year. Therefore the calculation is a little more complicated. So, I have made it easy for you to see just how many years you would have lived through if you were a dog.
+              </br></br>
+                Cool, right? :-)
+              </p>
+            <h3>What is your age in dog years?</h3>
+              <div class="container" id="dogyears">
+              <button id="dogyearsbutton" onclick="calculateDogYears()">Click to Calculate!</button>
+              </div>
+            <p><a class="links" href="#top">Back to top</a></p>
+        </article>
+    </main>
+    <footer>Started coding on 08.02.2019</footer>
   </body>
 </html>

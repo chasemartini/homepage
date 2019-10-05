@@ -1,0 +1,25 @@
+.intro {
+    text-align: center;
+    font-weight: bold,
+}
+.title-1 {
+    font-weight: bold;
+}
+header {
+    background-color: green;
+    font-weight: bold;
+}
+body {
+    background-color: yellow;
+    font-family: 'Trebuchet MS', 
+                 'Lucida Sans Unicode', 
+                 'Lucida Grande', 
+                 'Lucida Sans', 
+                  Arial, 
+                  sans-serif
+}
+footer {
+    background-color: red;
+    font-weight: bold;
+
+}
