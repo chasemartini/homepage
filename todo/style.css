@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(144, 29, 252);
+}
+.header {
+    color: white;
+    font-family: "ZCOOL KuaiLe";
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+.main {
+    background-color: white;
+    border-radius: 5px;
+}
+.controls {
+    display: flex;
+}
+.controls input[type = text] {
+    flex: 1;
+    flex-grow: 1;
+}
+.controls input[type = button] {
+    border-radius: 5px;
+}
+.entry {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.6em;
+}
